@@ -20,7 +20,7 @@ Sistema web completo desenvolvido em Python com Flask para auxiliar na triagem d
 ## 📸 Telas do Sistema
 
 <p align="center">
-  <img src="URL_DA_IMAGEM_DO_PAINEL_ADMIN" alt="Painel do Administrador" width="700">
+  <img src="https://raw.githubusercontent.com/PD3-Sangria/E-triagem-v2/refs/heads/main/admin.png" alt="Painel do Administrador" width="700">
   <br>
   <em>Painel do Administrador com a lista de doadores e opção de remoção.</em>
 </p>
