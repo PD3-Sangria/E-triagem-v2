@@ -69,4 +69,4 @@ Sistema web completo desenvolvido em Python com Flask para auxiliar na triagem d
     ```bash
     flask run
     ```
-A aplicação estará disponível em `http://127.0.0.1:5000`.
+A aplicação estará disponível em `https://nicolasblf.pythonanywhere.com/login`.
