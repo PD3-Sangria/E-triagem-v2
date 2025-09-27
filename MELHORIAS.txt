@@ -1,0 +1,9 @@
+MELHORIAS
+
+-CSS melhorado para uma melhor apresentação
+ 
+-imagem ao fundo do projeto
+
+-Melhoria na aba de adm
+
+Resumo melhoria visual absoluta

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sangria - Controle de Doações{% endblock %}</title>
+    
+ <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='android-chrome-192x192.png') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    {% block head_extra %}{% endblock %}
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">
+        <a href="{{ url_for('index') }}" class="brand-logo-link">
+    <img src="{{ url_for('static', filename='logoaba1.png') }}" alt="Logo Sangria Projeto" class="brand-logo">
+    Sangria Projeto
+</a>
+        <span class="version-tag">v2.0</span>
+        <a href="https://github.com/PD3-Sangria/e-triagem" target="_blank" class="github-link" title="Ver o código no GitHub">GitHub</a>
+    </div>
+    <div class="nav-links">
+        {% if current_user.is_authenticated %}
+            <span class="user-info">Olá, {{ current_user.full_name or current_user.username }}!</span>
+            <a href="{{ url_for('logout') }}">Sair (Logout)</a>
+        {% else %}
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Cadastrar</a>
+        {% endif %}
+    </div>
+</nav>
+
+    <main class="container">
+        {# Seção para exibir mensagens flash #}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flash-messages">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        {# Bloco de conteúdo de cada página #}
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer class="main-footer">
+        <p>&copy; 2025 Sangria Projeto - Controle de Doações. Todos os direitos reservados.</p>
+    </footer>
+
+    {% block scripts_extra %}{% endblock %}
+</body>
+</html>
