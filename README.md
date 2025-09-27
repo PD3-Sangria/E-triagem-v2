@@ -26,7 +26,7 @@ Sistema web completo desenvolvido em Python com Flask para auxiliar na triagem d
 </p>
 
 <p align="center">
-  <img src="URL_DA_IMAGEM_DA_TELA_DE_LOGIN" alt="Tela de Login" width="700">
+  <img src="https://raw.githubusercontent.com/PD3-Sangria/E-triagem-v2/refs/heads/main/login%20.png" alt="Tela de Login" width="700">
   <br>
   <em>Nova tela de login do projeto.</em>
 </p>
