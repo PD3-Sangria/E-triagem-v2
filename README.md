@@ -40,7 +40,7 @@ Sistema web completo desenvolvido em Python com Flask para auxiliar na triagem d
 * **Bibliotecas Python:** Flask-Login, Werkzeug, Openpyxl
 
 ---
-#### Atores (usuários)
+## Atores (usuários)
 
 | Ação | Administrador | Doador (Usuário) |
 | :--- | :---: | :---: |
