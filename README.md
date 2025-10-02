@@ -40,6 +40,25 @@ Sistema web completo desenvolvido em Python com Flask para auxiliar na triagem d
 * **Bibliotecas Python:** Flask-Login, Werkzeug, Openpyxl
 
 ---
+#### Atores (usuários)
+
+| Ação | Administrador | Doador (Usuário) |
+| :--- | :---: | :---: |
+| Cadastrar-se no sistema | ❌ | ✅ |
+| Fazer login | ✅ | ✅ |
+| Realizar triagem de doação | ❌ | ✅ |
+| Visualizar o próprio resultado da triagem | ❌ | ✅ |
+| Visualizar todos os doadores cadastrados | ✅ | ❌ |
+| Remover registros de doadores | ✅ | ❌ |
+| Gerar planilha `.xlsx` com dados dos doadores | ✅ | ❌ |
+
+## Projeto 
+
+- Diagrama de atividade: <img width="1024" height="1536" alt="diagrama de atividade" src="https://github.com/user-attachments/assets/d0bfc106-0f9d-4c24-bf33-da1c030e44a6" />
+- Diagrama de caso de uso: <img width="1680" height="960" alt="diagrama de caso de uso (UML)" src="https://github.com/user-attachments/assets/42ebc61a-c684-4d58-a3c3-564dac44dbb6" />
+
+- Diagrama de classe: (UML): <img width="1357" height="683" alt="diagrama de classe (UML)" src="https://github.com/user-attachments/assets/ab1d1200-ca74-480a-a6d4-8e6413d1bf96" />
+
 
 ## 🚀 Como Executar Localmente
 
